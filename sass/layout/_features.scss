@@ -1,0 +1,38 @@
+.features {
+    &-content {
+        @extend %container;
+    }
+    &-list {
+        @extend %list, %flex-wrap;
+        justify-content: space-between;
+        &-item {
+            width: 270px;
+            text-align: left;
+            margin-right: 30px;
+
+            &-title {
+                @extend %uppercase;
+                @include font($fw: 700);
+                margin-bottom: 10px;
+            }
+
+            &-svg {
+                width: 70px;
+                height: 70px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            & div {
+                @extend %align-center;
+                background: #f5f4fa;
+                border-radius: 4px;
+                margin-bottom: 30px;
+                height: 120px;
+            }
+            & p {
+                @extend %description;
+            }
+        }
+    }
+}

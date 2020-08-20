@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    @include font;
+    color: $text-dark-theme-color;
+    background-color: $title-dark-theme-color;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+p,
+span {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+    color: $text-dark-theme-color;
+}
+
+footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.accent {
+    color: $accent-color;
+}
+
+.hide-item {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}

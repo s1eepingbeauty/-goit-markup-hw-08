@@ -1,0 +1,15 @@
+@import './utils/normalize';
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/placeholders';
+
+@import './base/base';
+
+@import './components/logo';
+@import './components/section';
+@import './components/active-page';
+
+@import './layout/header';
+@import './layout/filter-btn';
+@import './layout/project';
+@import './layout/footer';
