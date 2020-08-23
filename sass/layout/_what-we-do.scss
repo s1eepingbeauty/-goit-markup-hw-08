@@ -1,23 +1,24 @@
 .what-we-do {
-  margin-top: 0;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+
   &-item {
     position: relative;
-    width: 370px;
+    width: calc((100% - 30px * 2) / 3);
 
     &-title {
       position: absolute;
       bottom: 0;
       width: 100%;
       text-align: center;
-      @include font($fw: 700, $lh: 1.15em);
+      @include font($fw: 700, $lh: 1.15);
       color: $text-light-theme-color;
       background: rgba(47, 48, 58, 0.8);
       padding-top: 27px;
       padding-bottom: 27px;
-    }
-
-    &:not(:last-child) {
-      margin-right: 30px;
     }
   }
 }

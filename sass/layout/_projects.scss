@@ -1,0 +1,84 @@
+.project {
+  &-list-item {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 30px * 2) / 3);
+      margin-bottom: 30px;
+    }
+
+    &-link {
+      display: block;
+      border: 1px solid #eeeeee;
+
+      &:hover,
+      &:focus {
+        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+      }
+
+      &:hover .project-description {
+        transform: translateY(0);
+      }
+    }
+
+    &:nth-child(2n) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 0;
+      }
+    }
+
+    &:nth-child(3n) {
+      @media screen and (min-width: 1200px) {
+        margin-right: 0;
+      }
+    }
+
+    &:nth-last-child(-n + 3) {
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &-title {
+    padding: 20px;
+  }
+
+  &-name {
+    @include font($fs: 18px, $fw: 700, $lh: 2, $ls: 0.06em);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &-type {
+    @include font($fs: 16px, $lh: 1.875);
+    color: $desc-color;
+  }
+
+  &-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    @include font($fs: 18px, $lh: 1.556);
+    color: $text-light-theme-color;
+    background-color: rgba(33, 150, 243, 0.9);
+    padding-left: 24px;
+    padding-right: 24px;
+
+    transform: translateY(100%);
+    transition: 250ms transform linear;
+  }
+}
+
+.box {
+  position: relative;
+  overflow: hidden;
+}

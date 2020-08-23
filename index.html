@@ -10,7 +10,7 @@
 
   <body>
     <header class="header">
-      <div class="container flex-wrap">
+      <div class="header-content container flex-wrap">
         <!-- НАВИГАЦИЯ -->
         <h2 class="hide-item" hidden>Навигиция</h2>
         <nav class="navigation flex-wrap">
@@ -32,7 +32,7 @@
 
         <address class="header-address flex-wrap">
           <ul class="header-list list flex-wrap">
-            <li class="header-mail">
+            <li class="header-list-item header-mail">
               <a class="header-mail-link link flex-wrap center" href="mailto:info@devstudio.com" target="_blank">
                 <svg class="header-mail-link-svg" width="16" height="11">
                   <use href="./images/sprite.svg#mail"></use>
@@ -40,7 +40,7 @@
                 info@devstudio.com
               </a>
             </li>
-            <li class="header-tel">
+            <li class="header-list-item header-tel">
               <a class="header-tel-link link flex-wrap center" href="tel:+380961111111" target="_blank">
                 <svg class="header-tel-link-svg" width="10" height="15">
                   <use href="./images/sprite.svg#tel"></use>
@@ -70,8 +70,8 @@
           <h2 class="main-section-titles hide-item" hidden>
             Особенности
           </h2>
-          <ul class="features-list list flex-wrap">
-            <li class="features-list-item">
+          <ul class="list grid-list features-list flex-wrap">
+            <li class="grid-item features-list-item">
               <div class="center">
                 <svg class="features-list-item-svg">
                   <use href="./images/sprite.svg#antenna"></use>
@@ -84,7 +84,7 @@
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="features-list-item">
+            <li class="grid-item features-list-item">
               <div class="center">
                 <svg class="features-list-item-svg">
                   <use href="./images/sprite.svg#clock"></use>
@@ -97,7 +97,7 @@
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="features-list-item">
+            <li class="grid-item features-list-item">
               <div class="center">
                 <svg class="features-list-item-svg">
                   <use href="./images/sprite.svg#diagram"></use>
@@ -110,7 +110,7 @@
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="features-list-item">
+            <li class="grid-item features-list-item">
               <div class="center">
                 <svg class="features-list-item-svg">
                   <use href="./images/sprite.svg#astronaut"></use>
@@ -132,20 +132,20 @@
       <section class="what-we-do section">
         <div class="container">
           <h2 class="main-section-titles">Чем мы занимаемся</h2>
-          <ul class="list what-we-do-list flex-wrap">
-            <li class="what-we-do-item">
+          <ul class="list grid-list what-we-do-list flex-wrap">
+            <li class="grid-item what-we-do-item">
               <img src="./images/what-we-do/box-1.png" width="370" height="294" alt="Десктопные приложения" />
               <p class="what-we-do-item-title uppercase">
                 Десктопные приложения
               </p>
             </li>
-            <li class="what-we-do-item">
+            <li class="grid-item what-we-do-item">
               <img src="./images/what-we-do/box-2.png" width="370" height="294" alt="Мобильные приложения" />
               <p class="what-we-do-item-title uppercase">
                 Мобильные приложения
               </p>
             </li>
-            <li class="what-we-do-item">
+            <li class="grid-item what-we-do-item">
               <img src="./images/what-we-do/box-3.png" width="370" height="294" alt="Дизайнерске решения" />
               <p class="what-we-do-item-title uppercase">
                 Дизайнерске решения
@@ -159,8 +159,8 @@
       <section class="team section">
         <div class="container">
           <h2 class="main-section-titles">Наша команда</h2>
-          <ul class="team-card-list list flex-wrap">
-            <li class="team-card-item">
+          <ul class="list grid-list team-card-list flex-wrap">
+            <li class="grid-item team-card-item">
               <img src="./images/our-team-img/img-1.jpg" width="270" height="260" alt="Николай Кучеренко" />
               <p class="team-card-name">Николай Кучеренко</p>
               <p class="team-card-profession" lang="en">
@@ -197,7 +197,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team-card-item">
+            <li class="grid-item team-card-item">
               <img src="./images/our-team-img/img-2.jpg" width="270" height="260" alt="Ольга Ивановоа" />
               <p class="team-card-name">Ольга Иванова</p>
               <p class="team-card-profession" lang="en">
@@ -234,7 +234,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team-card-item">
+            <li class="grid-item team-card-item">
               <img src="./images/our-team-img/img-3.jpg" width="270" height="260" alt="Андрей Шевченко" />
               <p class="team-card-name">Андрей Шевченко</p>
               <p class="team-card-profession" lang="en">
@@ -269,7 +269,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team-card-item">
+            <li class="grid-item team-card-item">
               <img src="./images/our-team-img/img-4.jpg" width="270" height="260" alt="Иван Николаев" />
               <p class="team-card-name">Иван Николаев</p>
               <p class="team-card-profession" lang="en">
@@ -314,43 +314,43 @@
       <section class="clients section">
         <div class="container">
           <h2 class="main-section-titles">Постоянные клиенты</h2>
-          <ul class="clients-list list flex-wrap center">
-            <li class="clients-list-item">
+          <ul class="list grid-list clients-list flex-wrap center">
+            <li class="grid-item clients-list-item">
               <a class="clients-list-item-link center" href="" aria-label="Ссылка на компанию YA & CO">
                 <svg class="clients-list-item-link-svg" width="45" height="50">
                   <use href="./images/sprite.svg#client-logo-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list-item">
+            <li class="grid-item clients-list-item">
               <a class="clients-list-item-link center" href="" aria-label="Ссылка на Tagline here Company">
                 <svg class="clients-list-item-link-svg" width="40" height="52">
                   <use href="./images/sprite.svg#client-logo-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list-item">
+            <li class="grid-item clients-list-item">
               <a class="clients-list-item-link center" href="" aria-label="Ссылка на Company">
                 <svg class="clients-list-item-link-svg" width="41" height="43">
                   <use href="./images/sprite.svg#client-logo-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list-item">
+            <li class="grid-item clients-list-item">
               <a class="clients-list-item-link center" href="" aria-label="Ссылка на Foster Peters">
                 <svg class="clients-list-item-link-svg" width="80" height="42">
                   <use href="./images/sprite.svg#client-logo-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list-item">
+            <li class="grid-item clients-list-item">
               <a class="clients-list-item-link center" href="" aria-label="Ссылка на Brand">
                 <svg class="clients-list-item-link-svg" width="59" height="47">
                   <use href="./images/sprite.svg#client-logo-5"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-list-item">
+            <li class="grid-item clients-list-item">
               <a class="clients-list-item-link center" href="" aria-label="Ссылка на Tag Line Company">
                 <svg class="clients-list-item-link-svg" width="89" height="46">
                   <use href="./images/sprite.svg#client-logo-6"></use>
@@ -365,10 +365,10 @@
     <!-- ПОДВАЛ -->
 
     <footer class="footer">
-      <div class="container flex-wrap">
+      <div class="footer-content container">
         <h2 class="hide-item" hidden>Подвал</h2>
-        <address class="footer-address">
-          <a class="footer-logo link" href="index.html" aria-label="Ссылка на главную страницу сайта" lang="en"><span class="accent">Web</span> Studio</a>
+        <address class="footer-box footer-address">
+          <a class="logo link" href="index.html" aria-label="Ссылка на главную страницу сайта" lang="en"><span class="accent">Web</span> Studio</a>
           <ul class="footer-address-list list">
             <li class="footer-address-list-item">
               <a class="link footer-address-link" href="https://goo.gl/maps/JWdkFvdbj5zFCxJH9">г. Киев, пр-т Леси Украинки, 26</a>
@@ -382,34 +382,34 @@
           </ul>
         </address>
 
-        <div class="social-links">
+        <div class="footer-box social-links">
           <h3 class="social-links-title uppercase">
             Присоединяйтесь
           </h3>
-          <ul class="social-links list flex-wrap">
+          <ul class="list social-links-list flex-wrap">
             <li class="social-links-item">
-              <a class="social-links-item-link link center" href="#" aria-label="Ссылка на Инстаграм">
+              <a class="link social-links-item-link center" href="#" aria-label="Ссылка на Инстаграм">
                 <svg class="social-links-item-link-svg">
                   <use href="./images/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links-item">
-              <a class="social-links-item-link link center" href="#" aria-label="Ссылка на Твитер">
+              <a class="link social-links-item-link center" href="#" aria-label="Ссылка на Твитер">
                 <svg class="social-links-item-link-svg">
                   <use href="./images/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links-item">
-              <a class="social-links-item-link link center" href="#" aria-label="Ссылка на Фейсбук">
+              <a class="link social-links-item-link center" href="#" aria-label="Ссылка на Фейсбук">
                 <svg class="social-links-item-link-svg">
                   <use href="./images/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links-item">
-              <a class="social-links-item-link link center" href="#" aria-label="Ссылка на Линкедин">
+              <a class="link social-links-item-link center" href="#" aria-label="Ссылка на Линкедин">
                 <svg class="social-links-item-link-svg">
                   <use href="./images/sprite.svg#linkedin"></use>
                 </svg>
@@ -417,7 +417,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form-container">
+        <div class="footer-box footer-form-container">
           <h3 class="footer-form-title uppercase">
             Подпишитесь на рассылку
           </h3>

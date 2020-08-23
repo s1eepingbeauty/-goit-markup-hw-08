@@ -10,9 +10,8 @@
 
   <body>
     <header class="header">
-      <div class="container flex-wrap">
+      <div class="header-content container flex-wrap">
         <!-- НАВИГАЦИЯ -->
-
         <h2 class="hide-item" hidden>Навигиция</h2>
         <nav class="navigation flex-wrap">
           <a class="logo link" href="index.html" aria-label="Ссылка на главную страницу сайта" lang="en"> <span class="accent">Web</span> Studio </a>
@@ -33,7 +32,7 @@
 
         <address class="header-address flex-wrap">
           <ul class="header-list list flex-wrap">
-            <li class="header-mail">
+            <li class="header-list-item header-mail">
               <a class="header-mail-link link flex-wrap center" href="mailto:info@devstudio.com" target="_blank">
                 <svg class="header-mail-link-svg" width="16" height="11">
                   <use href="./images/sprite.svg#mail"></use>
@@ -41,7 +40,7 @@
                 info@devstudio.com
               </a>
             </li>
-            <li class="header-tel">
+            <li class="header-list-item header-tel">
               <a class="header-tel-link link flex-wrap center" href="tel:+380961111111" target="_blank">
                 <svg class="header-tel-link-svg" width="10" height="15">
                   <use href="./images/sprite.svg#tel"></use>
@@ -57,30 +56,31 @@
     <main>
       <!-- СОРТИРОВКА ПРОЕКТОВ -->
 
-      <div class="section">
-        <h2 class="hide-item" hidden>Сортировка проектов</h2>
-        <div class="filter-projects container center">
-          <ul class="filter-projects-list list flex-wrap">
-            <li class="filter-projects-item">
-              <button class="filter-btn filter-btn-accent" type="button">Все</button>
-            </li>
-            <li class="filter-projects-item">
-              <button class="filter-btn" type="button">Веб-сайты</button>
-            </li>
-            <li class="filter-projects-item">
-              <button class="filter-btn" type="button">Приложения</button>
-            </li>
-            <li class="filter-projects-item">
-              <button class="filter-btn" type="button">Дизайн</button>
-            </li>
-            <li class="filter-projects-item">
-              <button class="filter-btn" type="button">Маркетинг</button>
-            </li>
-          </ul>
-        </div>
+      <section class="section">
         <div class="container">
-          <ul class="projects-list list flex-wrap">
-            <li class="project-list-item">
+          <h2 class="hide-item" hidden>Сортировка проектов</h2>
+          <div class="filter-projects center">
+            <ul class="list filter-projects-list flex-wrap">
+              <li class="filter-projects-item">
+                <button class="filter-btn filter-btn-accent" type="button">Все</button>
+              </li>
+              <li class="filter-projects-item">
+                <button class="filter-btn" type="button">Веб-сайты</button>
+              </li>
+              <li class="filter-projects-item">
+                <button class="filter-btn" type="button">Приложения</button>
+              </li>
+              <li class="filter-projects-item">
+                <button class="filter-btn" type="button">Дизайн</button>
+              </li>
+              <li class="filter-projects-item">
+                <button class="filter-btn" type="button">Маркетинг</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="list grid-list projects-list flex-wrap">
+            <li class="grid-item project-list-item">
               <a class="project-list-item-link link" href="#" aria-label="Ссылка на проект Технокряк">
                 <div class="box">
                   <img src="./images/portfolio-img/project-img-1.jpg" width="370" height="294" alt="" />
@@ -95,7 +95,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-list-item">
+            <li class="grid-item project-list-item">
               <a class="project-list-item-link link" href="#" aria-label="Ссылка на проект Постер">
                 <div class="box">
                   <img src="./images/portfolio-img/project-img-2.jpg" width="370" height="294" alt="" />
@@ -110,7 +110,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-list-item">
+            <li class="grid-item project-list-item">
               <a class="project-list-item-link link" href="#" aria-label="Ссылка на проект Ресторан">
                 <div class="box">
                   <img src="./images/portfolio-img/project-img-3.jpg" width="370" height="294" alt="" />
@@ -125,7 +125,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-list-item">
+            <li class="grid-item project-list-item">
               <a class="project-list-item-link link" href="#" aria-label="Ссылка на проект Prime">
                 <div class="box">
                   <img src="./images/portfolio-img/project-img-4.jpg" width="370" height="294" alt="" />
@@ -140,7 +140,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-list-item">
+            <li class="grid-item project-list-item">
               <a class="project-list-item-link link" href="#" aria-label="Ссылка на проект Boxes">
                 <div class="box">
                   <img src="./images/portfolio-img/project-img-5.jpg" width="370" height="294" alt="" />
@@ -155,7 +155,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-list-item">
+            <li class="grid-item project-list-item">
               <a class="project-list-item-link link" href="#" aria-label="Ссылка на проект">
                 <div class="box">
                   <img src="./images/portfolio-img/project-img-6.jpg" width="370" height="294" alt="" />
@@ -170,7 +170,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-list-item">
+            <li class="grid-item project-list-item">
               <a class="project-list-item-link link" href="#" aria-label="Ссылка на проект Издание">
                 <div class="box">
                   <img src="./images/portfolio-img/project-img-7.jpg" width="370" height="294" alt="" />
@@ -185,7 +185,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-list-item">
+            <li class="grid-item project-list-item">
               <a class="project-list-item-link link" href="#" aria-label="Ссылка на маркетинговый проект">
                 <div class="box">
                   <img src="./images/portfolio-img/project-img-8.jpg" width="370" height="294" alt="" />
@@ -200,7 +200,7 @@
                 </div>
               </a>
             </li>
-            <li class="project-list-item">
+            <li class="grid-item project-list-item">
               <a class="project-list-item-link link" href="#" aria-label="Ссылка на проект Приложение">
                 <div class="box">
                   <img src="./images/portfolio-img/project-img-9.jpg" width="370" height="294" alt="" />
@@ -217,16 +217,16 @@
             </li>
           </ul>
         </div>
-      </div>
+      </section>
     </main>
 
     <!-- ПОДВАЛ -->
 
     <footer class="footer">
-      <div class="container flex-wrap">
+      <div class="footer-content container">
         <h2 class="hide-item" hidden>Подвал</h2>
-        <address class="footer-address">
-          <a class="footer-logo link" href="index.html" aria-label="Ссылка на главную страницу сайта" lang="en"><span class="accent">Web</span> Studio</a>
+        <address class="footer-box footer-address">
+          <a class="logo link" href="index.html" aria-label="Ссылка на главную страницу сайта" lang="en"><span class="accent">Web</span> Studio</a>
           <ul class="footer-address-list list">
             <li class="footer-address-list-item">
               <a class="link footer-address-link" href="https://goo.gl/maps/JWdkFvdbj5zFCxJH9">г. Киев, пр-т Леси Украинки, 26</a>
@@ -240,34 +240,34 @@
           </ul>
         </address>
 
-        <div class="social-links">
+        <div class="footer-box social-links">
           <h3 class="social-links-title uppercase">
             Присоединяйтесь
           </h3>
-          <ul class="social-links list flex-wrap">
+          <ul class="list social-links-list flex-wrap">
             <li class="social-links-item">
-              <a class="social-links-item-link link center" href="#" aria-label="Ссылка на Инстаграм">
+              <a class="link social-links-item-link center" href="#" aria-label="Ссылка на Инстаграм">
                 <svg class="social-links-item-link-svg">
                   <use href="./images/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links-item">
-              <a class="social-links-item-link link center" href="#" aria-label="Ссылка на Твитер">
+              <a class="link social-links-item-link center" href="#" aria-label="Ссылка на Твитер">
                 <svg class="social-links-item-link-svg">
                   <use href="./images/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links-item">
-              <a class="social-links-item-link link center" href="#" aria-label="Ссылка на Фейсбук">
+              <a class="link social-links-item-link center" href="#" aria-label="Ссылка на Фейсбук">
                 <svg class="social-links-item-link-svg">
                   <use href="./images/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links-item">
-              <a class="social-links-item-link link center" href="#" aria-label="Ссылка на Линкедин">
+              <a class="link social-links-item-link center" href="#" aria-label="Ссылка на Линкедин">
                 <svg class="social-links-item-link-svg">
                   <use href="./images/sprite.svg#linkedin"></use>
                 </svg>
@@ -275,7 +275,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form-container">
+        <div class="footer-box footer-form-container">
           <h3 class="footer-form-title uppercase">
             Подпишитесь на рассылку
           </h3>
@@ -293,6 +293,5 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
   </body>
 </html>
