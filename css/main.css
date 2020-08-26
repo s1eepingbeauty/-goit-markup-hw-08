@@ -855,6 +855,45 @@ footer {
   margin-top: 28px;
 }
 
+.menu-btn {
+  position: relative;
+  z-index: 100;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-btn.is-open .icon-close {
+  display: block;
+}
+
+.menu-btn.is-open .icon-burger {
+  display: none;
+}
+
+.icon-close {
+  display: none;
+}
+
+.menu-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 337px;
+  height: 796px;
+  background-color: teal;
+  padding-top: 118px;
+  padding-bottom: 227px;
+  padding-left: 40px;
+  padding-right: 105px;
+  transform: translateY(-100%);
+  transition: transform 500ms linear;
+}
+
+.menu-wrapper.is-open {
+  transform: translateY(0);
+}
+
 .hero {
   text-align: center;
   height: 400px;
