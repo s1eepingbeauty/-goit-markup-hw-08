@@ -16,7 +16,7 @@
   margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
-    @include font($fs: 36px, $lh: 1.167);
+    @include font($fs: 36px, $fw: 700, $lh: 1.167);
     margin-bottom: 50px;
   }
 }
