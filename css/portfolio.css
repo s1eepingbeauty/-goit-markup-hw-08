@@ -485,12 +485,6 @@ footer {
   color: #000000;
 }
 
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 88px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
@@ -532,12 +526,16 @@ footer {
   }
 }
 
-.filter-projects-item:not(:last-child) {
-  margin-right: 8px;
+.filter-projects-list {
+  margin-bottom: 35px;
 }
 
-.filter-projects-list {
-  margin-bottom: 50px;
+.filter-projects-item {
+  margin-bottom: 15px;
+}
+
+.filter-projects-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-btn {
@@ -613,6 +611,7 @@ footer {
 
 @media screen and (min-width: 1200px) {
   .header-list-item:not(:last-child) {
+    margin-bottom: 0;
     margin-right: 30px;
   }
 }
@@ -633,7 +632,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   .header-list-item-link {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -660,6 +659,13 @@ footer {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
+    margin-right: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation-list {
+    margin-right: 305px;
   }
 }
 
@@ -689,6 +695,7 @@ footer {
 @media screen and (min-width: 768px) {
   .navigation-list-link {
     font-size: 14px;
+    line-height: 1.143;
   }
 }
 
@@ -705,6 +712,7 @@ footer {
 .menu-wrapper {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .active-page::after {

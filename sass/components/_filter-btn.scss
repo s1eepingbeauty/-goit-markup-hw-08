@@ -1,10 +1,14 @@
 .filter {
   &-projects {
+    &-list {
+      margin-bottom: 35px;
+    }
+    &-item {
+      margin-bottom: 15px;
+    }
+
     &-item:not(:last-child) {
       margin-right: 8px;
-    }
-    &-list {
-      margin-bottom: 50px;
     }
   }
 
