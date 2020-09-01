@@ -541,6 +541,10 @@ footer {
   padding: 10px 32px;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .backdrop {
   position: fixed;
   left: 0;
@@ -549,6 +553,7 @@ footer {
   height: 100%;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
 }
 
 .is-hidden {
