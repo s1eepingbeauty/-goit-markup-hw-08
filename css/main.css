@@ -541,10 +541,6 @@ footer {
   padding: 10px 32px;
 }
 
-body.modal-open {
-  overflow: hidden;
-}
-
 .backdrop {
   position: fixed;
   left: 0;
